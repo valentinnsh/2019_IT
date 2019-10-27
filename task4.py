@@ -26,8 +26,6 @@ if __name__ == "__main__":
         if in_pareto_front(i, X):
             front_ind.append(i)
 
-    # X = np.append(X, np.reshape(X[:, 0], (n, 1)), axis=1)
-
     pareto = X[front_ind, :]
     ax_plt_angle = 2 * np.pi * np.arange(m + 1) / m
 
